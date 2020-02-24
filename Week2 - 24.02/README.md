@@ -20,4 +20,12 @@
 	ios::out   - Open a file for writing.
 	ios::trunc - If the file already exists, its contents will be truncated before opening the file.
 
+## read & write BINARY
 
+	ofstream outFile("<directory>", std::ios::binary);
+
+	outFile.write((char*)<address_of_object_to_write>, sizeof(object_type));
+
+	ifstream inFile("<directory>", std::ios::binary);
+
+	inFile.read((char*)<address_of_object_to_read>, sizeof(object_type));
